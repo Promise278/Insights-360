@@ -1,50 +1,69 @@
-# Welcome to your Expo app 👋
+# 📰 News App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern mobile news application built with React Native, TypeScript, NativeWind, and Expo CLI.
+This app provides real-time news updates with a clean and responsive UI.
 
-## Get started
+## Features
 
-1. Install dependencies
+- Latest news feed with categories
 
-   ```bash
-   npm install
-   ```
+- Search functionality
 
-2. Start the app
+- Responsive design with NativeWind (Tailwind CSS for React Native)
 
-   ```bash
-   npx expo start
-   ```
+- Fast development powered by Expo CLI
 
-In the output, you'll find options to open the app in a
+- Written in TypeScript for type safety
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- User-first design with reusable components
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🛠️ Tech Stack
 
-## Get a fresh project
+- React Native – Core framework
 
-When you're ready, run:
+- Expo CLI – Development & build tool
 
-```bash
-npm run reset-project
+- TypeScript – Static typing for better maintainability
+
+- NativeWind – Utility-first styling (Tailwind CSS for RN)
+
+## 📂 Project Structure
+``` news-app/
+│── app/              # App routes & screens
+│── components/       # Reusable UI components
+│── hooks/            # Custom hooks
+│── assets/           # Images, fonts, icons
+│── utils/            # Helper functions
+│── App.tsx           # Entry point
+│── package.json
+│── tsconfig.json
+│── tailwind.config.js
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## ⚡ Getting Started
 
-## Learn more
+#### Clone the repository
+``` 
+git clone https://github.com/Promise278/Insights-360.git
+cd news-app
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+#### Install dependencies
+```
+npm install
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+#### Start the development server
+```
+npx expo start
+```
 
-## Join the community
+## 📱 Running the App
 
-Join our community of developers creating universal apps.
+You can open the app in:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Expo Go App → Scan QR code with your phone
+
+Android Emulator (Android Studio)
+
+iOS Simulator (Xcode, macOS only)
