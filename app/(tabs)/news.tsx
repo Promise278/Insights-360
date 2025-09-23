@@ -5,13 +5,10 @@ import {
   FlatList,
   ActivityIndicator,
   Pressable,
-  TouchableOpacity,
 } from "react-native";
 import { Image } from "expo-image";
-import { Ionicons } from "@expo/vector-icons";
-import { router } from "expo-router";
 
-export default function HomeScreen() {
+export default function NewScreen() {
   const [news, setNews] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -34,29 +31,13 @@ export default function HomeScreen() {
       </View>
     );
   }
+
   return (
     <View className="flex-1 bg-gray-50 p-4 pt-16">
-      <View className="flex-row justify-between">
-          <Ionicons name="menu" size={32} color={"black"} />
-        <View>
-          <Text className="text-3xl font-bold mb-6 text-[#001F3F]">
-            Grand News
-          </Text>
-        </View>
-        <TouchableOpacity onPress={() => router.push("/(tabs)/profile")}>
-          <Ionicons name="person-circle" size={32} color={"black"} />
-        </TouchableOpacity>
-      </View>
-      <View className="flex-row justify-between mt-14">
-        <View>
-          <Text className="text-3xl font-bold mb-6 text-[#001F3F]">
-            📰 Latest News
-          </Text>
-        </View>
-          <TouchableOpacity onPress={() => router.push("/(tabs)/news")}>
-            <Text className="text-gray-500">See More →</Text>
-          </TouchableOpacity>
-        </View>
+      <Text className="text-3xl font-bold mb-6 text-[#001F3F]">
+        📰 Latest News
+      </Text>
+
       <FlatList
         data={news}
         keyExtractor={(item, index) => item.id?.toString() || index.toString()}
@@ -73,7 +54,7 @@ export default function HomeScreen() {
               <Text className="text-xl font-semibold text-[#001F3F] mb-2">
                 {item.title}
               </Text>
-              <Text className="text-gray-600 leading-6" numberOfLines={12}>
+              <Text className="text-gray-600 leading-6" numberOfLines={10}>
                 {item.body}
               </Text>
               <Text className="mt-3 text-sm text-blue-600 font-medium">

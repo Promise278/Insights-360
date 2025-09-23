@@ -1,10 +1,12 @@
 import { Tabs } from 'expo-router';
 import React from 'react';
+import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 
 import { HapticTab } from '@/components/haptic-tab';
 import { IconSymbol } from '@/components/ui/icon-symbol';
 import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
+
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -24,10 +26,21 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="news"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: 'News',
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons name="newspaper" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: 'Profile',
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="person-circle" size={size} color={color} />
+          ),
         }}
       />
     </Tabs>
