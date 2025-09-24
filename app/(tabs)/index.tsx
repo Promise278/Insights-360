@@ -47,7 +47,7 @@ export default function HomeScreen() {
           <Ionicons name="person-circle" size={32} color={"black"} />
         </TouchableOpacity>
       </View>
-      <View className="flex-row justify-between mt-14">
+      <View className="flex-row justify-between mt-5">
         <View>
           <Text className="text-3xl font-bold mb-6 text-[#001F3F]">
             📰 Latest News

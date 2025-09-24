@@ -29,7 +29,7 @@ export default function ProfileScreen() {
         <Text className="text-gray-200">{user?.email || "guest@example.com"}</Text>
       </View>
 
-      <View className="px-6 mt-8 gap-y-10">
+      <View className="px-6 mt-4 gap-y-8">
         <TouchableOpacity className="flex-row items-center bg-white dark:bg-neutral-900 rounded-xl px-4 py-5 shadow">
           <Feather name="user" size={22} color="#001F3F" />
           <Text className="ml-3 text-lg text-gray-800 dark:text-gray-200">

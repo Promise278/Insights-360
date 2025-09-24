@@ -43,7 +43,7 @@ export default function Signup() {
     });
   }
   return (
-    <View className="flex-1 items-center">
+    <View className="flex-1 items-center px-4">
       <Image
         source={require("../../assets/images/signuplogo.png")}
         style={{
@@ -52,7 +52,7 @@ export default function Signup() {
           resizeMode: "contain",
         }}
       />
-      <View className="gap-y-16 -mt-8" >
+      <View className="gap-y-10 -mt-8" >
         <TextInput
           className="w-[340px] border-b-2 border-[#989898]"
           placeholder="Name"

@@ -45,7 +45,7 @@ export default function SignIn() {
           resizeMode: "contain",
         }}
       />
-      <View className="gap-y-16 -mt-8">
+      <View className="gap-y-12 -mt-8">
         <TextInput
           className="w-[340px] border-b-2 border-[#989898]"
           placeholder="Email"
