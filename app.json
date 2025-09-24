@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Insights-360",
-    "slug": "Insights-360",
+    "slug": "insights-360",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/logo.png",
@@ -48,7 +48,7 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "0d9cad4e-99bc-40fa-ab1f-c62619452869"
+        "projectId": "994666d6-509e-43b4-9006-c1d068a9c10d"
       }
     }
   }
